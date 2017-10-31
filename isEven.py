@@ -6,7 +6,6 @@ def isEven(n):
     result = ET.fromstring(response.text).findall("./pod[@id='Result']")[0].find("subpod").find("plaintext").text
     if "not" not in result.split():
         return True
-        print(" is even")
     else:
         return False
-        print(" is false")
+      
